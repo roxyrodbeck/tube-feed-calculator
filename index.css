@@ -1,0 +1,116 @@
+:root {
+    --background: #aeaeae;
+    --red: rgb(255, 98, 51);
+    --light-gray: #eeeeee;
+    --dark-gray: #444443;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: var(--dark-gray);
+    background-image: url("feed-setup.jpg");
+    background-size: cover;
+    background-position: center;
+    /* linear-gradient(to right, var(--light-gray), var(--background)); */
+}
+
+.container {
+    border: 3px solid black;
+    position: relative;
+    width: 300px;
+    height: 500px;
+    background: rgba(116, 116, 116, 0.4);
+    padding-right: 27px;
+    /* margin-left: -50px; */
+}
+
+form {
+    margin-left: -5px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+label, input::placeholder, input {
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+    display: block;
+    /* justify-content: center;
+    align-items: center; */
+    margin: 2em;
+    /* flex-direction: column; */
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 5ch;
+    background-image: linear-gradient(to right, var(--light-gray), var(--red));
+    margin-right: -400px;
+    padding: 1em 2em;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+h1 {
+    color: black;
+    text-shadow: #FC0 1px 0 10px;
+    width: auto;
+    height: 35px;
+    background-image: linear-gradient(to right, var(--background), var(--light-gray), 50%);
+    padding: 0.5em;
+    margin-left: 20px;
+    border: transparent;
+    border-radius: 2em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+
+button {
+    border: 1px solid #FC0;
+    margin-bottom: 10px;
+    padding: 5px;
+    height: 2.6em;
+    width: 8em;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    background-color: var(--red);
+    color: var(--dark-gray);
+    border-radius: 999px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    color: white;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+#output {
+    margin-top: -22px;
+    margin-left: 20px;
+    color: white;
+    text-shadow: #FC0 1px 0 10px;
+    font-size: 30px;
+    font-style:oblique;
+    height: 10px;
+    width: auto;
+}
+
+#resetButton {
+    /* font-size: 1em; */
+    width: 5em;
+    height: 2em;
+    margin-top: 10px;
+}
