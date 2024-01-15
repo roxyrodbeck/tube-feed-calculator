@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tube Feed Rate Calculator</title>
+</head>
+<body>
+  
+<div class="container" id="calculator">
+    <h1>Tube Feed Rate Calculator</h1>
+
+    <div class="calculator">
+            <form>
+            <label for="milliliters">How many milliliters total?</label>
+            <input id="milliliters" type="number" id="milInput" name="mil" />
+
+            <label for="hours">Over how many hours?</label>
+            <input id="hours" type="number" id="hourInput" name="hour" />
+
+            <label for="milperhour">How many mL/hr?</label>
+            <input id="milperhour" type="number" id="milperhourInput" name="milperhour" placeholder="mL">per one hour</input>
+    </div> 
+    <p id="output"></p>
+
+    <button id="btn" type="submit" onclick="return false;">FEEEEED ME</button>
+    <br>
+    <button id="resetButton" type="button" onclick="reset()">RESET</button>
+    
+</div>
+    <script src="index.js"></script>
+    
+</body>
+</html>
