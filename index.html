@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="feedassets/index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tube Feed Rate Calculator</title>
@@ -10,16 +10,17 @@
   
 <div class="container" id="calculator">
     <h1>Tube Feed Rate Calculator</h1>
+    <p>Enter any two pieces of information.</p>
 
     <div class="calculator">
             <form>
-            <label for="milliliters">How many milliliters total?</label>
-            <input id="milliliters" type="number" id="milInput" name="mil" />
+            <label for="milliliters">Total milliliters:</label>
+            <input id="milliliters" type="number" id="milInput" name="mil" placeholder="how many mL total?" />
 
-            <label for="hours">Over how many hours?</label>
-            <input id="hours" type="number" id="hourInput" name="hour" />
+            <label for="hours">Total hours:</label>
+            <input id="hours" type="number" id="hourInput" name="hour" placeholder="over how many hours?" />
 
-            <label for="milperhour">How many mL/hr?</label>
+            <label for="milperhour">Feed rate:</label>
             <input id="milperhour" type="number" id="milperhourInput" name="milperhour" placeholder="mL">per one hour</input>
     </div> 
     <p id="output"></p>
