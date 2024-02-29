@@ -48,6 +48,11 @@ label {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+input {
+    background-color: transparent;
+    transition: 0.25s ease;
+}
+
 input::placeholder {
     font-size: 15px;
 }
@@ -56,7 +61,7 @@ input::placeholder {
     display: block;
     margin: 2em;
     min-width: 200px;
-    min-height: 200px;
+    min-height: 175px;
     max-width: 5ch;
     background-image: linear-gradient(to right, var(--light-gray), var(--red));
     margin-right: -400px;
