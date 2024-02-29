@@ -8,10 +8,13 @@
   html, body {
     margin: 0;
     padding: 0;
+    background-color: rgb(211, 114, 84);
 }
 
 body {
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 100vh;
@@ -20,28 +23,31 @@ body {
     background-image: url("feed-setup.jpg");
     background-size: cover;
     background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
     border: 3px solid black;
     position: relative;
-    width: 300px;
+    width: 325px;
     height: 600px;
     background: rgba(116, 116, 116, 0.4);
-    padding-right: 27px;
+    text-align: center;
 }
 
 p {
     color: white;
-}
-form {
-    margin-left: -5px;
     text-align: center;
-    margin-top: 15px;
+    padding: 0.5em;
+}
+
+form {
+    text-align: center;
     font-size: 20px;
 }
 
 label {
+    padding: 0.5em 0 0 0.5em;
     text-align: left;
     float: left;
     font-size: 17px;
@@ -58,16 +64,19 @@ input::placeholder {
 }
 
 .calculator {
-    display: block;
+    display:flex;
     margin: 2em;
     min-width: 200px;
     min-height: 175px;
-    max-width: 5ch;
     background-image: linear-gradient(to right, var(--light-gray), var(--red));
-    margin-right: -400px;
-    padding: 1em 2em;
+    padding: 1em;
     border-radius: 5px;
+    border: 1px solid black;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.instructions {
+    margin-top: 2em;
 }
 
 h1 {
@@ -76,9 +85,7 @@ h1 {
     width: auto;
     height: 35px;
     background-image: linear-gradient(to right, var(--background), var(--light-gray), 50%);
-    padding: 0.5em;
-    margin-left: 20px;
-    
+    padding: 0.5em;    
 }
 
 
@@ -88,7 +95,6 @@ button {
     padding: 5px;
     height: 2.6em;
     width: 8em;
-    margin-left: 20px;
     font-size: 0.9rem;
     background-color: var(--red);
     color: var(--dark-gray);
@@ -103,19 +109,14 @@ button:hover {
     text-shadow: #FC0 1px 0 10px;
 }
 
-#output {
-    margin-top: -22px;
-    margin-left: 20px;
-    color: white;
-    text-shadow: #FC0 1px 0 10px;
-    font-size: 30px;
-    font-style:oblique;
-    height: 10px;
-    width: auto;
-}
-
 #resetButton {
     width: 5em;
     height: 2em;
     margin-top: 10px;
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    color: gray;
 }
