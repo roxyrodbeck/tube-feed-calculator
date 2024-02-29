@@ -8,20 +8,20 @@
 </head>
 <body>
   
-<div class="container" id="calculator">
+<div class="container">
     <h1>Tube Feed Rate Calculator</h1>
     <p>Enter any two pieces of information.</p>
 
     <div class="calculator">
             <form>
             <label for="milliliters">Total milliliters:</label>
-            <input id="milliliters" type="number" id="milInput" name="mil" placeholder="how many mL total?" />
+            <input id="milliliters" type="text" name="mil" placeholder="how many mL total?" />
 
             <label for="hours">Total hours:</label>
-            <input id="hours" type="number" id="hourInput" name="hour" placeholder="over how many hours?" />
+            <input id="hours" type="text" name="hour" placeholder="over how many hours?" />
 
             <label for="milperhour">Feed rate:</label>
-            <input id="milperhour" type="number" id="milperhourInput" name="milperhour" placeholder="mL">per one hour</input>
+            <input id="milperhour" type="text" name="milperhour" placeholder="mL per one hour" />
     </div> 
     <p id="output"></p>
 
@@ -30,7 +30,7 @@
     <button id="resetButton" type="button" onclick="reset()">RESET</button>
     
 </div>
-    <script src="index.js"></script>
+    <script src="feedassets/index.js"></script>
     
 </body>
 </html>
