@@ -17,37 +17,34 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
     text-align: center;
     color: var(--dark-gray);
     background-image: url("feed-setup.jpg");
     background-size: cover;
     background-position: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Karla', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
     border: 3px solid black;
     position: relative;
     width: 325px;
-    height: 600px;
+    height: 590px;
     background: rgba(116, 116, 116, 0.4);
-    text-align: center;
 }
 
-p {
+.instructions {
     color: white;
     text-align: center;
     padding: 0.5em;
 }
 
 form {
-    text-align: center;
     font-size: 20px;
 }
 
 label {
-    padding: 0.5em 0 0 0.5em;
+    padding: 0.2em 0 0 0.2em;
     text-align: left;
     float: left;
     font-size: 17px;
@@ -64,30 +61,24 @@ input::placeholder {
 }
 
 .calculator {
-    display:flex;
     margin: 2em;
     min-width: 200px;
     min-height: 175px;
     background-image: linear-gradient(to right, var(--light-gray), var(--red));
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 5px;
     border: 1px solid black;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .instructions {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 h1 {
     color: black;
-    text-shadow: #FC0 1px 0 10px;
-    width: auto;
-    height: 35px;
-    background-image: linear-gradient(to right, var(--background), var(--light-gray), 50%);
-    padding: 0.5em;    
+    text-shadow: #FC0 1px 0 3px;
 }
-
 
 button {
     border: 1px solid #FC0;
@@ -115,8 +106,6 @@ button:hover {
     margin-top: 10px;
 }
 
-footer {
-    justify-content: center;
-    align-items: center;
+.copyright {
     color: gray;
 }
