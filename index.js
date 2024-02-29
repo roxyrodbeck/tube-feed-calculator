@@ -17,17 +17,17 @@ document.getElementById('btn').addEventListener('click',function feedRate(event)
         } else {
             if (mil > 0 && hour > 0) {
                 answerMilPerHour = mil / hour;
-                return document.getElementById("output").innerHTML= `${answerMilPerHour.toFixed(2)} mL/hour`; 
+                return document.getElementById("milperhour").value= `${answerMilPerHour.toFixed(2)} mL/hour`; 
             
             } else {
             if (mil > 0) {
                 answerHour = mil / milPerHour;
-                return document.getElementById("output").innerHTML= `${answerHour.toFixed(2)} hours`;
+                return document.getElementById("hours").value= `${answerHour.toFixed(2)} hours`;
     
             } else {
                 if (hour > 0) {
                     answerMil = milPerHour * hour;
-                    return document.getElementById("output").innerHTML = `${answerMil.toFixed(2)} mL`;
+                    return document.getElementById("milliliters").value = `${answerMil.toFixed(2)} mL`;
                     
                    
                 }
@@ -35,4 +35,3 @@ document.getElementById('btn').addEventListener('click',function feedRate(event)
         }
 }
 });
-
